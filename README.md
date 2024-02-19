@@ -1,0 +1,1 @@
+# responsive-art-news-landing-page
