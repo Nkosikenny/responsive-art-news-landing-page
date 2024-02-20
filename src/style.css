@@ -1,0 +1,38 @@
+/*base css*/
+html{
+    font-size: 14px;
+    font-family: "Inter",sans-serif;
+    font-weight: 500;
+}
+
+header{
+    background-image: url("headbackground.png");
+    background-size: cover;
+    padding: 32px;
+    color: white;
+    height: 1024px;
+}
+
+.navbar{
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.navbar .navbar-nav .nav-item{
+    display: inline;
+    list-style: none;
+}
+
+.navbar .navbar-nav .nav-item a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.9em;
+    color: white;
+}
+
+.toggle-collapse{
+    float: right;
+    width:40px;
+    height: 40px;
+    margin: 16px;
+}
