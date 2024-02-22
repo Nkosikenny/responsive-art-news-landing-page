@@ -1,4 +1,4 @@
-/*base css*/
+/*base css for mobile screens*/
 html{
     font-size: 14px;
     font-family: "Inter",sans-serif;
@@ -13,14 +13,28 @@ header{
     height: 1024px;
 }
 
+#logo{
+    float: left;
+}
 .navbar{
-    width: 100%;
-    background-color: antiquewhite;
+    float: right;
+    width: 60%;
+}
+
+button.toggle-collapse{
+    margin-right: 32px;
+    margin-top: -10px;
 }
 
 .navbar .navbar-nav .nav-item{
-    display: inline;
+    display: block;
     list-style: none;
+}
+.navbar-collapse{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    height: 0vh;
 }
 
 .navbar .navbar-nav .nav-item a{
@@ -36,3 +50,102 @@ header{
     height: 40px;
     margin: 16px;
 }
+
+.textbox{
+    margin-top: 196px;
+    max-width: 375px;
+    padding: 16px;
+}
+
+ h1{
+  font-family: Libre Caslon Display;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: left;
+
+}
+
+#box{
+    width: 90px;
+    height: 15px;
+    background-color: aliceblue;
+
+}
+
+button.textbtn{
+    background-color: transparent;
+    color: #ffffff;
+    width: 153px;
+    height: 42px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+
+}
+
+
+/*tablet screens*/
+@media screen and (min-width:576px) {
+    html{
+        font-size: 14px;
+    }
+    
+}
+
+
+/*laptop screens*/
+@media screen and (min-width:768px) {
+    html{
+        font-size: 16px;
+    }
+
+    .navbar{
+        width: 80%;
+    }
+
+    .navbar-collapse{
+        width: 100%;
+        height: auto;
+    }
+
+    button.toggle-collapse{
+        display: none;
+    }
+
+    
+    .navbtn{
+    }
+    .navbar-nav{
+        display: flex;
+    }
+    .navbtn{
+        margin-top: 10px;
+    }
+
+    .navbar .nav-item{
+        display: inline;
+        list-style: none;
+    }
+    
+    .navbar .nav-item a{
+        text-decoration: none;
+        display: inline;
+        padding: 0.9em;
+        color: white;
+    }
+    
+    .toggle-collapse{
+        float: right;
+        width:40px;
+        height: 40px;
+        margin: 16px;
+    }
+
+    .textbox{
+        margin-top: 196px;
+        max-width: 450px;
+        padding: 16px;
+    }
+
+    
+}
+
