@@ -82,11 +82,32 @@ button.textbtn{
 
 }
 
+.news-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+#card{
+    width: 311px;
+    height: 619px;
+    margin: 16px;
+}
+
 
 /*tablet screens*/
 @media screen and (min-width:576px) {
     html{
         font-size: 14px;
+    }
+
+    .news-cards{
+        display: flex;
+    }
+    
+    #card{
+      width: 187px;
+      height: 635px;
+      margin: 16px;
     }
     
 }
@@ -145,6 +166,13 @@ button.textbtn{
         max-width: 450px;
         padding: 16px;
     }
+
+    #card{
+        width: 419px;
+        height: 635px;
+        margin: 16px;
+      }
+      
 
     
 }
